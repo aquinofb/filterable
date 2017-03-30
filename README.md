@@ -26,7 +26,9 @@ end
 ```
 
 ```ruby
-Contact.filter(by_organization: params[:organization_id,
+Contact.filter(by_organization: params[:organization_id],
                by_user:         params[:user_id])
 ```
+
+In this case, if the filters params[:organization_id] or params[:user_id] are `nil`, they will be ignored.
 
